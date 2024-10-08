@@ -1,0 +1,118 @@
+html, body {
+    height: 100%; 
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-image: url('1351625.png'); 
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: #fff; 
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+h1, h2, h3 {
+    color: #fff; 
+}
+
+#session-container {
+    margin-bottom: 20px;
+    background-color: rgba(0, 0, 0, 0.5); 
+    padding: 15px;
+    border-radius: 8px; 
+    width: 100%;
+    max-width: 600px;
+}
+
+#session-container input {
+    margin-right: 10px;
+    background-color: transparent; 
+    border: 1px solid #fff; 
+    color: #fffcfc; 
+}
+
+form, .buku {
+    margin-bottom: 20px;
+}
+
+input {
+    margin: 5px 0;
+    padding: 8px;
+    width: calc(100% - 20px);
+    box-sizing: border-box;
+    border-radius: 5px; 
+}
+
+button {
+    padding: 8px 15px;
+    background-color: #d141b4; 
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px; 
+    transition: background-color 0.3s ease; 
+}
+
+button:hover {
+    background-color: #d141b4; 
+}
+
+
+#daftar-buku-container, #buku-favorit-container {
+    display: flex;
+    flex-wrap: wrap; 
+    gap: 20px; 
+    justify-content: center; 
+    width: 100%;
+}
+
+#daftar-buku, #buku-favorit {
+    border: 1px solid #fff; 
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.6); 
+    border-radius: 8px;
+    width: calc(50% - 10px); 
+    box-sizing: border-box;
+}
+
+.buku {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.5); 
+    padding: 10px 0;
+}
+
+.buku:last-child {
+    border-bottom: none;
+}
+
+.buku p {
+    margin: 0;
+    color: #fff; 
+}
+
+.buku button {
+    margin-top: 10px;
+    background-color: #ff4500; 
+    color: #fff;
+}
+
+.buku button:hover {
+    background-color: #ff6347;
+}
+
+
+@media (max-width: 600px) {
+    #daftar-buku, #buku-favorit {
+        width: 100%;
+    }
+
+    input, button {
+        width: 100%;
+        margin-right: 0;
+    }
+}
