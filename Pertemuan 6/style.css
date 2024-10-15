@@ -1,0 +1,89 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f8ff;
+    background-image: url('pexels-njeromin-19872371.jpg');
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+h2 {
+    text-align: center;
+    color: #000000;
+    font-size: 24px;
+    margin-top: 20px;
+}
+
+
+#current-weather, #weather-forecast {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+
+#current-weather {
+    background-color: #248d9f;
+    color: white;
+}
+
+#current-weather img {
+    width: 50px;
+    display: block;
+    margin: 0 auto;
+}
+
+#current-weather p {
+    text-align: center;
+    font-size: 18px;
+    margin: 5px 0;
+}
+
+
+#weather-forecast .day {
+    background-color: #ecf0f1;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+#weather-forecast .day img {
+    width: 40px;
+    margin-bottom: 5px;
+}
+
+#weather-forecast .day h4 {
+    font-size: 18px;
+    margin-bottom: 5px;
+    color: #2980b9;
+}
+
+#weather-forecast .day p {
+    font-size: 16px;
+    margin: 5px 0;
+}
+
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #528bc4;
+    color: white;
+    font-size: 14px;
+}
+
+footer a {
+    color: #196eab;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
