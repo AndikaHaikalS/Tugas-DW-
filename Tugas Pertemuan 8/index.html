@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Praktikum Tailwind CSS</title>
+  <link href="../dist/output.css" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="bg-blue-400 text-white p-4 md:p-6">
+    <div class="container mx-auto flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
+      <div class="flex items-center space-x-3">
+        <img src="Logo Universitas Pancasila.png" alt="Logo" class="w-8 h-8 md:w-10 md:h-10">
+        <h1 class="text-lg md:text-2xl font-semibold">Praktikum Tailwind CSS</h1>
+      </div>
+      <nav>
+        <ul class="flex flex-col md:flex-row space-y-2 md:space-y-0 md:space-x-6">
+          <li><a href="#" class="hover:text-blue-200">Home</a></li>
+          <li><a href="#" class="hover:text-blue-200">About</a></li>
+          <li><a href="#" class="hover:text-blue-200">Services</a></li>
+          <li><a href="#" class="hover:text-blue-200">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Welcome Section -->
+  <section class="bg-blue-50 py-12 md:py-20">
+    <div class="container mx-auto text-center">
+      <h2 class="text-3xl md:text-5xl font-extrabold text-blue-600 mb-4">Selamat Datang di Praktikum Tailwind CSS</h2>
+      <p class="text-base md:text-lg text-gray-600 mb-6 md:mb-8">Belajar membuat layout profesional dengan utility classes dari Tailwind CSS.</p>
+      <a href="#" class="bg-blue-400 text-white px-6 py-3 md:px-8 md:py-4 rounded-lg shadow-lg hover:bg-blue-300">Mulai Sekarang</a>
+    </div>
+  </section>
+
+  <!-- Testimonial Section -->
+  <section class="bg-white py-12 md:py-20">
+    <div class="container mx-auto text-center">
+      <h3 class="text-2xl md:text-4xl font-semibold text-blue-600 mb-6 md:mb-8">Apa Kata Mereka?</h3>
+      <div class="flex flex-col md:flex-row flex-wrap justify-center gap-6 md:space-x-6">
+        <div class="bg-blue-50 p-4 md:p-6 rounded-lg shadow-md max-w-xs mx-auto">
+          <p class="text-gray-700 italic">"Tailwind CSS membuat desain jauh lebih mudah dan praktis. Saya sangat merekomendasikan untuk dipelajari!"</p>
+          <p class="mt-4 font-bold text-blue-600">- Abner Paskah</p>
+        </div>
+        <div class="bg-blue-50 p-4 md:p-6 rounded-lg shadow-md max-w-xs mx-auto">
+          <p class="text-gray-700 italic">"Praktikum ini membantu saya memahami dasar-dasar CSS dengan cepat. Tailwind benar-benar powerful!"</p>
+          <p class="mt-4 font-bold text-blue-600">- Arga Bona</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services Section -->
+  <section class="bg-blue-50 py-12 md:py-20">
+    <div class="container mx-auto text-center">
+      <h3 class="text-2xl md:text-4xl font-semibold text-blue-600 mb-6 md:mb-8">Layanan Kami</h3>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div class="p-6 bg-white rounded-lg shadow-lg">
+          <h4 class="text-lg md:text-xl font-semibold text-blue-600 mb-4">Kursus Tailwind</h4>
+          <p class="text-gray-600">Belajar Tailwind CSS dari dasar hingga mahir dengan panduan lengkap dan latihan praktis.</p>
+        </div>
+        <div class="p-6 bg-white rounded-lg shadow-lg">
+          <h4 class="text-lg md:text-xl font-semibold text-blue-600 mb-4">Pelatihan UI/UX</h4>
+          <p class="text-gray-600">Pelajari desain UI/UX modern dan aplikasikan menggunakan utility classes yang efisien.</p>
+        </div>
+        <div class="p-6 bg-white rounded-lg shadow-lg">
+          <h4 class="text-lg md:text-xl font-semibold text-blue-600 mb-4">Konsultasi Project</h4>
+          <p class="text-gray-600">Butuh bantuan dalam proyek CSS? Kami siap membantu Anda dengan solusi yang tepat.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-blue-400 text-white p-4 md:p-6">
+    <div class="container mx-auto text-center">
+      <p>&copy; 2024 Praktikum Tailwind CSS. All rights reserved.</p>
+      <p class="text-xs md:text-sm mt-2">Dibuat dengan Hormat Andika Haikal Syahputra - 4523210016.</p>
+    </div>
+  </footer>
+
+</body>
+</html>
