@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Luxury Blog</title>
+    <meta name="author" content="Andika Haikal Syahputra">
+    <meta name="description" content="Blog tentang Mercedes-Benz dan gaya hidup mewah.">
+
+    <!-- Tailwind CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Karla:400,700&display=swap');
+
+        .font-karla {
+            font-family: 'Karla', sans-serif;
+        }
+
+        .font-playfair {
+            font-family: 'Playfair Display', serif;
+        }
+
+        .header-bg {
+            background-image: url('black white.jpg');
+            background-size: cover;
+            background-position: center;
+            filter: grayscale(100%);
+        }
+
+        .footer-bg {
+            background: linear-gradient(to right, #1b1b1b, #0f0f0f);
+        }
+
+        .luxury {
+            background: linear-gradient(to right, #1b1b1b, #0f0f0f);
+        }
+
+        .hover-zoom:hover {
+            transform: scale(1.05);
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .btn-luxury {
+            background: linear-gradient(to right, #d4af37, #b78628);
+        }
+
+        .btn-luxury:hover {
+            background: linear-gradient(to right, #b78628, #d4af37);
+        }
+
+        .shadow-luxury {
+            box-shadow: 0px 4px 15px rgba(212, 175, 55, 0.5);
+        }
+    </style>
+    <!-- AlpineJS -->
+    <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js" defer></script>
+    <!-- Font Awesome -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/js/all.min.js"></script>
+</head>
+<body class="bg-black text-gray-300 font-karla">
+
+    <!-- Navigasi Atas -->
+    <nav class="w-full py-4 luxury shadow-lg">
+        <div class="container mx-auto flex flex-wrap items-center justify-between px-4">
+            <ul class="flex items-center text-white text-sm font-bold uppercase space-x-4">
+                <li><a class="hover:text-gray-400" href="#">Beranda</a></li>
+                <li><a class="hover:text-gray-400" href="#">Tentang Kami</a></li>
+                <li><a class="hover:text-gray-400" href="#">Blog</a></li>
+            </ul>
+            <div class="flex items-center space-x-4 text-lg">
+                <a class="text-gray-400 hover:text-white" href="https://www.instagram.com/luxurycarssuzz" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a class="text-gray-400 hover:text-white" href="https://t.me/luxurycarssuzz" target="_blank"><i class="fab fa-telegram"></i></a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Header -->
+    <header class="w-full h-64 header-bg relative">
+        <div class="absolute inset-0 bg-black bg-opacity-70 flex items-center justify-center">
+            <h1 class="text-white font-playfair text-5xl uppercase shadow-luxury">LuxuryCarsSuzz</h1>
+        </div>
+    </header>
+
+    <!-- Navigasi Topik -->
+    <nav class="w-full py-4 bg-gray-900 border-t border-b border-gray-800">
+        <div class="container mx-auto flex justify-center space-x-4">
+            <a href="#" class="hover:bg-gray-800 text-sm py-2 px-4 rounded text-white">Our Models</a>
+            <a href="#" class="hover:bg-gray-800 text-sm py-2 px-4 rounded text-white">Service</a>
+            <a href="#" class="hover:bg-gray-800 text-sm py-2 px-4 rounded text-white">Shopping Guide</a>
+        </div>
+    </nav>
+
+    <!-- Konten -->
+    <div class="container mx-auto flex flex-wrap py-8 px-4">
+        <!-- Bagian Artikel -->
+        <section class="w-full md:w-2/3">
+            <article class="shadow-lg overflow-hidden bg-gray-800 rounded-lg mb-8 hover-zoom">
+                <img src="mercy gambar 1.jpg" alt="Mercedes-Benz S-Class" class="w-full h-48 object-cover">
+                <div class="p-6">
+                    <h2 class="font-bold text-2xl mb-2 text-white">Mercedes-Benz S-Class</h2>
+                    <p class="text-gray-400 text-sm mb-4">Dibuat oleh <span class="font-semibold text-gray-300">Andika Haikal</span> pada 12 November 2024</p>
+                    <p class="text-gray-300">Mercedes-Benz S-Class adalah mobil sedan mewah kelas atas yang terkenal dengan desain elegan, teknologi canggih, dan performa mesin yang kuat.</p>
+                    <a href="#" class="text-blue-400 font-semibold hover:underline">Baca Selengkapnya →</a>
+                </div>
+            </article>
+
+            <article class="shadow-lg overflow-hidden bg-gray-800 rounded-lg mb-8 hover-zoom">
+                <img src="g63 gambar 2.jpg" alt="Mercedes-Benz G-Class" class="w-full h-48 object-cover">
+                <div class="p-6">
+                    <h2 class="font-bold text-2xl mb-2 text-white">Mercedes-Benz G-Class</h2>
+                    <p class="text-gray-400 text-sm mb-4">Dibuat oleh <span class="font-semibold text-gray-300">Andika Haikal</span> pada 25 Juni 2018</p>
+                    <p class="text-gray-300">Mobil ini dikenal dengan desain kotak khasnya yang ikonik dan sering disebut sebagai "G-Wagon".</p>
+                    <a href="#" class="text-blue-400 font-semibold hover:underline">Baca Selengkapnya →</a>
+                </div>
+            </article>
+
+            <article class="shadow-lg overflow-hidden bg-gray-800 rounded-lg mb-8 hover-zoom">
+                <img src="gambar (3).jpg" alt="Mercedes-Benz E-Class generasi W211" class="w-full h-48 object-cover">
+                <div class="p-6">
+                    <h2 class="font-bold text-2xl mb-2 text-white">Mercedes-Benz E-Class generasi W211</h2>
+                    <p class="text-gray-400 text-sm mb-4">Dibuat oleh <span class="font-semibold text-gray-300">Andika Haikal</span> pada 5 November 2009</p>
+                    <p class="text-gray-300">Mobil ini memiliki ciri khas sebagai sedan mewah yang menawarkan kenyamanan, performa tinggi, serta desain yang timeless.</p>
+                    <a href="#" class="text-blue-400 font-semibold hover:underline">Baca Selengkapnya →</a>
+                </div>
+            </article>
+        </section>
+
+        <!-- Sidebar -->
+        <aside class="w-full md:w-1/3 md:px-3">
+            <div class="bg-gray-900 shadow-lg rounded-lg p-6 mb-6">
+                <h2 class="text-2xl font-semibold mb-4 text-white">Tentang Kami</h2>
+                <p class="text-gray-300 leading-relaxed">
+                    Kami adalah platform yang berfokus pada eksplorasi dunia kemewahan melalui artikel tentang Mercedes-Benz, ikon otomotif yang dikenal karena desain elegan, teknologi canggih, dan performa luar biasa.
+                </p>
+                <p class="text-gray-300 leading-relaxed mt-4">
+                    Temukan panduan dan cerita inspiratif tentang gaya hidup mewah yang kami sajikan eksklusif untuk Anda.
+                </p>
+                <a href="#" class="block bg-blue-600 text-white text-center py-3 mt-6 rounded-lg hover:bg-blue-500 transition duration-300">Pelajari Lebih Lanjut</a>
+           </div>
+        </aside>
+    </div>
+
+    <!-- Footer -->
+    <footer class="w-full py-8 footer-bg text-gray-400">
+        <div class="container mx-auto text-center">
+            <p class="text-sm">&copy; 2024 LuxuryCarsSuzz - Semua Hak Dilindungi</p>
+        </div>
+    </footer>
+</body>
+</html>
